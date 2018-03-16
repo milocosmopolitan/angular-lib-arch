@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./row-selection.component.css']
 })
 export class RowSelectionComponent implements OnInit {
+  title = 'something';
 
   constructor() { }
 

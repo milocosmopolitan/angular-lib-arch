@@ -14,7 +14,9 @@ const buildLibs = async (apps, rest) => {
 
 (async () => {
   try {
-    const libs = getAffectedLibs();
+    const libs = await getAffectedLibs();
+
+    console.log(libs)
     await buildLibs(libs, {});
   } catch (e) {
     console.error(e);

@@ -38,6 +38,7 @@
     "@angular/platform-browser": "5.2.6",
     "@angular/platform-browser-dynamic": "5.2.6",
     "@angular/router": "5.2.6",
+    "@common/grid": "0.0.3",
     "@common/http": "file:@common/http",
     "@ngrx/effects": "5.1.0",
     "@ngrx/router-store": "5.0.1",

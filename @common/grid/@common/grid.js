@@ -2,7 +2,9 @@ import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 class RowSelectionComponent {
-    constructor() { }
+    constructor() {
+        this.title = 'something';
+    }
     /**
      * @return {?}
      */
@@ -14,8 +16,9 @@ RowSelectionComponent.decorators = [
                 selector: 'row-selection',
                 template: `
     <p>
-      row-selection works!
+      row-selection works!!!
     </p>
+    {{title}}
   `,
                 styles: [`
 
