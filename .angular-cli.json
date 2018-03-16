@@ -29,6 +29,12 @@
       "appRoot": ""
     },
     {
+      "name": "grid",
+      "root": "libs/grid/src",
+      "test": "../../../test.js",
+      "appRoot": ""
+    },
+    {
       "name": "http",
       "root": "libs/http/src",
       "test": "../../../test.js",

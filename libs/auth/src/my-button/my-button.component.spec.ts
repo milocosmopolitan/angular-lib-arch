@@ -6,12 +6,13 @@ describe('MyButtonComponent', () => {
   let component: MyButtonComponent;
   let fixture: ComponentFixture<MyButtonComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ MyButtonComponent ]
+  beforeEach(
+    async(() => {
+      TestBed.configureTestingModule({
+        declarations: [MyButtonComponent]
+      }).compileComponents();
     })
-    .compileComponents();
-  }));
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(MyButtonComponent);

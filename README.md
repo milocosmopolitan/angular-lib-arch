@@ -1,10 +1,20 @@
-# Common
+# Angular 5+ Multiple Library Packaging POC
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) using [Nrwl Nx](https://nrwl.io/nx).
 
+## Agenda
+
+[Quickstart]()
+[Launch Documentation App]()
+[Unit Testing]()
+[E2E Testing]()
+[NPM Scripts]()
+[Used Technologies]()
+
+
 ## Nrwl Extensions for Angular (Nx)
 
-<a href="https://nrwl.io/nx"><img src="https://preview.ibb.co/mW6sdw/nx_logo.png"></a>
+<a href="https://nrwl.io/nx"><img src="https://preview.ibb.co/mW6sdw/nx_logo.png" width="100"></a>
 
 Nx is an open source toolkit for enterprise Angular applications.
 

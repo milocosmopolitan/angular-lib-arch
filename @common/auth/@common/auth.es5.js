@@ -1,5 +1,25 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+var MyButtonComponent = /** @class */ (function () {
+    function MyButtonComponent() {
+    }
+    /**
+     * @return {?}
+     */
+    MyButtonComponent.prototype.ngOnInit = function () { };
+    return MyButtonComponent;
+}());
+MyButtonComponent.decorators = [
+    { type: Component, args: [{
+                selector: 'my-button',
+                template: "\n    <p>\n      my-button works!\n    </p>\n  ",
+                styles: ["\n\n  "]
+            },] },
+];
+/**
+ * @nocollapse
+ */
+MyButtonComponent.ctorParameters = function () { return []; };
 var AuthModule = /** @class */ (function () {
     function AuthModule() {
     }
@@ -7,7 +27,8 @@ var AuthModule = /** @class */ (function () {
 }());
 AuthModule.decorators = [
     { type: NgModule, args: [{
-                imports: [CommonModule]
+                imports: [CommonModule],
+                declarations: [MyButtonComponent]
             },] },
 ];
 /**
@@ -17,5 +38,5 @@ AuthModule.ctorParameters = function () { return []; };
 /**
  * Generated bundle index. Do not edit.
  */
-export { AuthModule };
+export { AuthModule, MyButtonComponent as ɵa };
 //# sourceMappingURL=auth.es5.js.map

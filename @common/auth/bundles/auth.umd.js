@@ -4,6 +4,26 @@
 	(factory((global.auth = {}),global.ng.core,global.ng.common));
 }(this, (function (exports,core,common) { 'use strict';
 
+var MyButtonComponent = /** @class */ (function () {
+    function MyButtonComponent() {
+    }
+    /**
+     * @return {?}
+     */
+    MyButtonComponent.prototype.ngOnInit = function () { };
+    return MyButtonComponent;
+}());
+MyButtonComponent.decorators = [
+    { type: core.Component, args: [{
+                selector: 'my-button',
+                template: "\n    <p>\n      my-button works!\n    </p>\n  ",
+                styles: ["\n\n  "]
+            },] },
+];
+/**
+ * @nocollapse
+ */
+MyButtonComponent.ctorParameters = function () { return []; };
 var AuthModule = /** @class */ (function () {
     function AuthModule() {
     }
@@ -11,7 +31,8 @@ var AuthModule = /** @class */ (function () {
 }());
 AuthModule.decorators = [
     { type: core.NgModule, args: [{
-                imports: [common.CommonModule]
+                imports: [common.CommonModule],
+                declarations: [MyButtonComponent]
             },] },
 ];
 /**
@@ -20,6 +41,7 @@ AuthModule.decorators = [
 AuthModule.ctorParameters = function () { return []; };
 
 exports.AuthModule = AuthModule;
+exports.ɵa = MyButtonComponent;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
