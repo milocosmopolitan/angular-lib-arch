@@ -9,6 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "start:documentation": "ng serve --app=documentation",
+    "build:documentation": "ng build --app=documentation",
     "prerelease": "lerna publish --skip-npm",
     "release": "node ./scripts/libs-publish.js",
     "libs:affected": "node ./scripts/libs-affected.js libs",

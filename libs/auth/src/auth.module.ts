@@ -4,6 +4,7 @@ import { MyButtonComponent } from './my-button/my-button.component';
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [MyButtonComponent]
+  declarations: [MyButtonComponent],
+  exports: [MyButtonComponent]
 })
 export class AuthModule {}
