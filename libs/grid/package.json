@@ -1,11 +1,14 @@
 {
   "$schema": "../../node_modules/ng-packagr/package.schema.json",
   "name": "@common/grid",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "ngPackage": {
     "lib": {
       "entryFile": "index.ts"
     },
     "dest": "@common/grid"
+  },
+  "publishConfig": {
+    "registry": "https://cafangular.jfrog.io/cafangular/api/npm/npm-local/"
   }
 }

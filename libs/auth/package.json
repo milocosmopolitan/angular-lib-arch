@@ -1,11 +1,14 @@
 {
   "$schema": "../../node_modules/ng-packagr/package.schema.json",
   "name": "@common/auth",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "ngPackage": {
     "lib": {
       "entryFile": "index.ts"
     },
     "dest": "@common/auth"
+  },
+  "publishConfig": {
+    "registry": "https://cafangular.jfrog.io/cafangular/api/npm/npm-local/"
   }
 }
