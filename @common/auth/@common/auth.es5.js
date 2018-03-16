@@ -12,7 +12,7 @@ var MyButtonComponent = /** @class */ (function () {
 MyButtonComponent.decorators = [
     { type: Component, args: [{
                 selector: 'my-button',
-                template: "\n    <p>\n      my-button works!\n    </p>\n  ",
+                template: "\n    <p>\n      my-button works!!!!!\n    </p>\n  ",
                 styles: ["\n\n  "]
             },] },
 ];
@@ -28,7 +28,8 @@ var AuthModule = /** @class */ (function () {
 AuthModule.decorators = [
     { type: NgModule, args: [{
                 imports: [CommonModule],
-                declarations: [MyButtonComponent]
+                declarations: [MyButtonComponent],
+                exports: [MyButtonComponent]
             },] },
 ];
 /**
@@ -38,5 +39,5 @@ AuthModule.ctorParameters = function () { return []; };
 /**
  * Generated bundle index. Do not edit.
  */
-export { AuthModule, MyButtonComponent as ɵa };
+export { AuthModule, MyButtonComponent };
 //# sourceMappingURL=auth.es5.js.map

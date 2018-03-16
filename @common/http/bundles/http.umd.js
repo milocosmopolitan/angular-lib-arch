@@ -18,8 +18,13 @@ HttpModule.decorators = [
  * @nocollapse
  */
 HttpModule.ctorParameters = function () { return []; };
+var AJAX_LAZY_LOAD_API_URLS = new core.InjectionToken('ajax-lazy-load-service AJAX_LAZY_LOAD_API_URLS');
+var AJAX_ITEM_API_URLS = new core.InjectionToken('ajax-item-service AJAX_ITEM_API_URLS');
+var AJAX_LIST_API_URLS = new core.InjectionToken('ajax-list-service AJAX_LIST_API_URLS');
 
 exports.HttpModule = HttpModule;
+exports.AJAX_LAZY_LOAD_API_URLS = AJAX_LAZY_LOAD_API_URLS;
+exports.AJAX_ITEM_API_URLS = AJAX_ITEM_API_URLS;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

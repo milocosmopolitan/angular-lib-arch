@@ -16,7 +16,7 @@ var MyButtonComponent = /** @class */ (function () {
 MyButtonComponent.decorators = [
     { type: core.Component, args: [{
                 selector: 'my-button',
-                template: "\n    <p>\n      my-button works!\n    </p>\n  ",
+                template: "\n    <p>\n      my-button works!!!!!\n    </p>\n  ",
                 styles: ["\n\n  "]
             },] },
 ];
@@ -32,7 +32,8 @@ var AuthModule = /** @class */ (function () {
 AuthModule.decorators = [
     { type: core.NgModule, args: [{
                 imports: [common.CommonModule],
-                declarations: [MyButtonComponent]
+                declarations: [MyButtonComponent],
+                exports: [MyButtonComponent]
             },] },
 ];
 /**
@@ -41,7 +42,7 @@ AuthModule.decorators = [
 AuthModule.ctorParameters = function () { return []; };
 
 exports.AuthModule = AuthModule;
-exports.ɵa = MyButtonComponent;
+exports.MyButtonComponent = MyButtonComponent;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

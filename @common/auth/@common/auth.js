@@ -13,7 +13,7 @@ MyButtonComponent.decorators = [
                 selector: 'my-button',
                 template: `
     <p>
-      my-button works!
+      my-button works!!!!!
     </p>
   `,
                 styles: [`
@@ -31,7 +31,8 @@ class AuthModule {
 AuthModule.decorators = [
     { type: NgModule, args: [{
                 imports: [CommonModule],
-                declarations: [MyButtonComponent]
+                declarations: [MyButtonComponent],
+                exports: [MyButtonComponent]
             },] },
 ];
 /**
@@ -43,5 +44,5 @@ AuthModule.ctorParameters = () => [];
  * Generated bundle index. Do not edit.
  */
 
-export { AuthModule, MyButtonComponent as ɵa };
+export { AuthModule, MyButtonComponent };
 //# sourceMappingURL=auth.js.map
