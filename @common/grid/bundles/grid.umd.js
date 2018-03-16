@@ -4,6 +4,27 @@
 	(factory((global.grid = {}),global.ng.core,global.ng.common));
 }(this, (function (exports,core,common) { 'use strict';
 
+var RowSelectionComponent = /** @class */ (function () {
+    function RowSelectionComponent() {
+    }
+    /**
+     * @return {?}
+     */
+    RowSelectionComponent.prototype.ngOnInit = function () {
+    };
+    return RowSelectionComponent;
+}());
+RowSelectionComponent.decorators = [
+    { type: core.Component, args: [{
+                selector: 'row-selection',
+                template: "\n    <p>\n      row-selection works!\n    </p>\n  ",
+                styles: ["\n\n  "]
+            },] },
+];
+/**
+ * @nocollapse
+ */
+RowSelectionComponent.ctorParameters = function () { return []; };
 var GridModule = /** @class */ (function () {
     function GridModule() {
     }
@@ -11,7 +32,9 @@ var GridModule = /** @class */ (function () {
 }());
 GridModule.decorators = [
     { type: core.NgModule, args: [{
-                imports: [common.CommonModule]
+                imports: [common.CommonModule],
+                declarations: [RowSelectionComponent],
+                exports: [RowSelectionComponent]
             },] },
 ];
 /**
@@ -20,6 +43,7 @@ GridModule.decorators = [
 GridModule.ctorParameters = function () { return []; };
 
 exports.GridModule = GridModule;
+exports.RowSelectionComponent = RowSelectionComponent;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

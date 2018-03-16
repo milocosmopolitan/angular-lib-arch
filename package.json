@@ -12,7 +12,7 @@
     "start:documentation": "ng serve --app=documentation",
     "build:documentation": "ng build --app=documentation",
     "prerelease": "lerna publish --skip-npm",
-    "release": "node ./scripts/libs-publish.js",
+    "release": "./scripts/release.sh",
     "libs:affected": "node ./scripts/libs-affected.js libs",
     "build:libs:affected": "node ./scripts/libs-build.js build",
     "test:libs:affected": "node ./scripts/libs-test.js libs",

@@ -1,5 +1,26 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+var RowSelectionComponent = /** @class */ (function () {
+    function RowSelectionComponent() {
+    }
+    /**
+     * @return {?}
+     */
+    RowSelectionComponent.prototype.ngOnInit = function () {
+    };
+    return RowSelectionComponent;
+}());
+RowSelectionComponent.decorators = [
+    { type: Component, args: [{
+                selector: 'row-selection',
+                template: "\n    <p>\n      row-selection works!\n    </p>\n  ",
+                styles: ["\n\n  "]
+            },] },
+];
+/**
+ * @nocollapse
+ */
+RowSelectionComponent.ctorParameters = function () { return []; };
 var GridModule = /** @class */ (function () {
     function GridModule() {
     }
@@ -7,7 +28,9 @@ var GridModule = /** @class */ (function () {
 }());
 GridModule.decorators = [
     { type: NgModule, args: [{
-                imports: [CommonModule]
+                imports: [CommonModule],
+                declarations: [RowSelectionComponent],
+                exports: [RowSelectionComponent]
             },] },
 ];
 /**
@@ -17,5 +40,5 @@ GridModule.ctorParameters = function () { return []; };
 /**
  * Generated bundle index. Do not edit.
  */
-export { GridModule };
+export { GridModule, RowSelectionComponent };
 //# sourceMappingURL=grid.es5.js.map

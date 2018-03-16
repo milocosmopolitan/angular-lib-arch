@@ -19,3 +19,4 @@ const buildLibs = async (apps, rest) => {
   } catch (e) {
     console.error(e);
   }
+});

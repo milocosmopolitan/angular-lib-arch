@@ -1,1 +1,1 @@
-{"$schema":"../../node_modules/ng-packagr/package.schema.json","name":"@common/http","version":"0.0.0","main":"bundles/http.umd.js","module":"@common/http.es5.js","es2015":"@common/http.js","typings":"http.d.ts","metadata":"http.metadata.json"}
+{"$schema":"../../node_modules/ng-packagr/package.schema.json","name":"@common/http","version":"0.0.1","main":"bundles/http.umd.js","module":"@common/http.es5.js","es2015":"@common/http.js","typings":"http.d.ts","metadata":"http.metadata.json"}
