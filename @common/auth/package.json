@@ -1,1 +1,1 @@
-{"$schema":"../../node_modules/ng-packagr/package.schema.json","name":"@common/auth","version":"0.0.1","main":"bundles/auth.umd.js","module":"@common/auth.es5.js","es2015":"@common/auth.js","typings":"auth.d.ts","metadata":"auth.metadata.json"}
+{"$schema":"../../node_modules/ng-packagr/package.schema.json","name":"@common/auth","version":"0.0.3","publishConfig":{"registry":"https://cafangular.jfrog.io/cafangular/api/npm/npm-local/"},"main":"bundles/auth.umd.js","module":"@common/auth.es5.js","es2015":"@common/auth.js","typings":"auth.d.ts","metadata":"auth.metadata.json"}

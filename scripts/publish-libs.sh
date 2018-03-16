@@ -1,8 +1,17 @@
 #!/usr/bin/env bash
 
-cd libs
-for entry in *
+ENV=privtenv
+
+if [ "$NPM_USERNAME" -e ]; then
+	echo "You have access!"
+else
+	echo "ACCESS DENIED!"
+fi
+
+cd @common
+for lib in *
 do
-  echo "$entry"
-  npm publish @caf/${dir}
+  echo "$lib"
+  cd ${lib}
+  //npm publish @caf/${lib}
 done
