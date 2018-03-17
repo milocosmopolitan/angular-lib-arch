@@ -1,5 +1,5 @@
 const { getAffectedLibs } = require('./utils');
 
 const libs = getAffectedLibs();
-console.log('libs', libs);
+console.log('Affected libraries', libs);
 console.log(libs.join(' '));

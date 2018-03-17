@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
+    "commit": "git-cz",
     "npm-login": "./scripts/npm-login.sh",
     "ng": "ng",
     "start": "ng serve",
@@ -15,7 +16,7 @@
     "prerelease": "lerna publish --skip-npm",
     "release": "./scripts/release.sh",
     "libs:affected": "node ./scripts/libs-affected.js libs",
-    "build:libs:affected": "node ./scripts/libs-build.js build",
+    "build:libs:affected": "node ./scripts/libs-build.js libs",
     "test:libs:affected": "node ./scripts/libs-test.js libs",
     "affected:apps": "./node_modules/.bin/nx affected apps",
     "affected:build": "./node_modules/.bin/nx affected build",
@@ -38,7 +39,7 @@
     "@angular/platform-browser": "5.2.6",
     "@angular/platform-browser-dynamic": "5.2.6",
     "@angular/router": "5.2.6",
-    "@common/grid": "0.0.3",
+    "@common/grid": "0.0.4",
     "@common/http": "file:@common/http",
     "@ngrx/effects": "5.1.0",
     "@ngrx/router-store": "5.0.1",
@@ -58,6 +59,7 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
+    "cz-conventional-changelog": "^2.1.0",
     "fs-extra": "^5.0.0",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",
@@ -73,7 +75,9 @@
     "tslint": "~5.9.1",
     "typescript": "2.6.2"
   },
-  "publishConfig": {
-    "registry": "https://cafangular.jfrog.io/cafangular/api/npm/npm-local/"
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

@@ -14,6 +14,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Nrwl Extensions for Angular (Nx)
 
+test
+
 <a href="https://nrwl.io/nx"><img src="https://preview.ibb.co/mW6sdw/nx_logo.png" width="100"></a>
 
 Nx is an open source toolkit for enterprise Angular applications.

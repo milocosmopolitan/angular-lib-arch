@@ -10,15 +10,9 @@ const buildLibs = async (apps, rest) => {
   else {
     console.log('No apps to build');
   }
-}
+};
 
-(async () => {
-  try {
-    const libs = await getAffectedLibs();
-
-    console.log(libs)
-    await buildLibs(libs, {});
-  } catch (e) {
-    console.error(e);
-  }
-});
+const libs = getAffectedLibs();
+buildLibs(libs, {});
+console.log('libs', libs);
+console.log(libs.join(' '));
